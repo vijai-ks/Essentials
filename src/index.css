@@ -5,22 +5,21 @@
 }
 
 html {
-  font-family: "Quicksand", sans-serif;
-  line-height: 1.5;
-
-  color: #ebe7ef;
   background: radial-gradient(#280a48, #20043d);
-
+  color: #ebe7ef;
+  font-family: "Quicksand", sans-serif;
   font-synthesis: none;
+  line-height: 1.5;
+  min-height: 80rem;
+
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  min-height: 80rem;
 }
 
 main {
-  width: 90%;
   max-width: 50rem;
   margin: auto;
+  width: 90%;
 }
