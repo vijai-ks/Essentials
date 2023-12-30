@@ -6,24 +6,26 @@
   padding: 0;
 }
 
-.examplesButton {
-  background-color: transparent;
+@mixin exampleButton($bgColor, $color) {
+  background-color: $bgColor;
   border: none;
   border-radius: 6px;
-  color: #a18aba;
+  color: $color;
   cursor: pointer;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1rem;
   padding: 0.5rem 1rem;
   transition: all 0.2s ease-in-out;
+}
 
+.examplesButton {
+  @include exampleButton(transparent, #a18aba);
   &:hover {
     background-color: #1b082f;
     color: #ebe7ef;
   }
+}
 
-  &:active {
-    background-color: #7925d3;
-    color: #ebe7ef;
-  }
+.examplesActiveButton {
+  @include exampleButton(#7925d3, #ebe7ef);
 }

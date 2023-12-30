@@ -14,7 +14,11 @@ export default function ToggleButton() {
         {exampleButtons.map((example) => (
           <button
             key={example}
-            className={toggleButtonStyles.examplesButton}
+            className={
+              example == exampleContent
+                ? toggleButtonStyles.examplesActiveButton
+                : toggleButtonStyles.examplesButton
+            }
             onClick={() => setExampleContent(example)}
           >
             {example}
