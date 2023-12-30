@@ -1,0 +1,42 @@
+.coreConceptsContainer {
+  border-radius: 6px;
+  background-color: #140524;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+}
+
+.coreConceptsHeading {
+  color: #a18aba;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+.coreConceptsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.coreConceptsListItem {
+  text-align: center;
+  width: 10rem;
+}
+
+.coreConceptsImage {
+  height: 4rem;
+  object-fit: cover;
+  width: 6rem;
+}
+
+.title {
+  margin: 0.5rem 0;
+}
+
+.conceptsDescription {
+  font-size: 0.9rem;
+}
