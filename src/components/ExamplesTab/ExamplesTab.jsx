@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import exampleTabStyles from "./ExamplesTab.module.scss";
 import { EXAMPLES } from "../../utils/examplesConfig";
 
@@ -19,3 +21,7 @@ export default function ExamplesTab({ exampleContent }) {
     </section>
   );
 }
+
+ExamplesTab.propTypes = {
+  exampleContent: PropTypes.string,
+};
